@@ -1,0 +1,13 @@
+---
+import Paragraph from './Paragraph.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<Paragraph>
+  <span class="text-secondary">{title} </span><slot />
+</Paragraph>

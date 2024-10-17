@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "scripts": {
+    "convert": "node convert.js",
+    "sharp": "node sharp.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.1.1",
+    "sharp": "^0.33.5"
+  }
+}

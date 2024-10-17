@@ -1,0 +1,14 @@
+---
+import Heading4 from './Heading4.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="mt-5">
+  <Heading4 text={title} />
+  <slot />
+</div>

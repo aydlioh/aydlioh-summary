@@ -1,0 +1,15 @@
+---
+interface Props {
+  text?: string;
+  href: string;
+  class?: string;
+}
+
+const { text, href, class: className } = Astro.props;
+---
+
+<a
+  class={`text-accent font-medium ${className}`}
+  href={href}
+  target="_blank">{text ?? href}</a
+>
