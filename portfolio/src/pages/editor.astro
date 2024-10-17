@@ -1,0 +1,371 @@
+---
+import Heading1 from '../components/Heading1.astro';
+import Heading2 from '../components/Heading2.astro';
+import Heading3 from '../components/Heading3.astro';
+import Heading4 from '../components/Heading4.astro';
+import IntroBlock from '../components/IntroBlock.astro';
+import IntroElement from '../components/IntroElement.astro';
+import Italic from '../components/Italic.astro';
+import Link from '../components/Link.astro';
+import OrderedList from '../components/OrderedList.astro';
+import Paragraph from '../components/Paragraph.astro';
+import Strong from '../components/Strong.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Pavel's Portfolio">
+  <!-- Intro -->
+  <section class="flex flex-row justify-between mb-5">
+    <div>
+      <Heading1 text="Павел Бирючев" class="mb-6" />
+      <Link text="github.com/aydlioh" href="https://github.com/aydlioh" />
+      <IntroBlock title="Вакансия">
+        <IntroElement title="Желаемая позиция:">
+          Junior Frontend Developer
+        </IntroElement>
+        <IntroElement title="Зарплатные ожидания:"> От 50 000 ₽ </IntroElement>
+      </IntroBlock>
+
+      <IntroBlock title="Местоположение и возраст">
+        <IntroElement title="Проживание:"> Россия, Екатеринбург </IntroElement>
+        <IntroElement title="Готовность к работе:">
+          готов к удаленной работе
+        </IntroElement>
+        <IntroElement title="Возраст:">19 лет</IntroElement>
+      </IntroBlock>
+
+      <IntroBlock title="Контактная информация">
+        <IntroElement title="Моб.:"> +7 (922) 610-86-96 </IntroElement>
+        <IntroElement title="Telegram:">
+          <Link
+            href="https://telegram.me/pavel_biryuchev"
+            text="@pavel_biryuchev"
+          />
+        </IntroElement>
+        <IntroElement title="Email:"> aydlioh@mail.ru </IntroElement>
+        <IntroElement title="GitHub:">
+          <Link
+            href="https://github.com/aydlioh"
+            text="https://github.com/aydlioh"
+          />
+        </IntroElement>
+      </IntroBlock>
+    </div>
+    <div class="w-52">
+      <img src="photo-sharp.png" alt="Pavel Biryuchev" />
+    </div>
+  </section>
+
+  <!-- О себе -->
+  <section>
+    <Heading2 text="О себе" />
+    <div class="py-4">
+      <Paragraph>
+        <Strong>Frontend разработчик</Strong> из Екатеринбурга, специализируюсь на
+        современных веб-технологиях в экосистеме
+        <Strong>React</Strong>.
+      </Paragraph>
+      <Paragraph class="my-3">
+        В настоящее время студент <Strong>УрФУ ИРИТ-РТФ</Strong> и обучаюсь на специальности
+        <Strong>Программная Инженерия</Strong>. Мне интересно работать над
+        значимыми проектами и постоянно расширять свои знания, осваивая новые
+        области и технологии.
+      </Paragraph>
+    </div>
+  </section>
+
+  <!-- Профессиональные навыки -->
+  <section>
+    <Heading2 text="Профессиональные навыки" />
+    <div class="py-4">
+      <Paragraph>
+        HTML • CSS • TypeScript • Vite • React • TailwindCSS • Next.js • Redux • Zustand • MobX •
+        Node.js • PostreSQL • Docker • Git
+      </Paragraph>
+    </div>
+  </section>
+
+  <!-- Опыт разработки -->
+  <section>
+    <Heading2 text="Опыт разработки" />
+    <div class="py-4">
+      <div class="mb-6">
+        <Paragraph class="mb-3">
+          <Italic>
+            В рамках проектного практикума и за время обучения разработано:
+          </Italic>
+        </Paragraph>
+        <OrderedList class="flex flex-col gap-3">
+          <li>
+            <Heading4 text="Cайт компании Create Technology" />
+            <Paragraph class="my-2">
+              Разработал сайт-лендинг компании CreaTech по дизайну, следуя
+              методологии <Strong>БЭМ</Strong>. Есть возможность отправить
+              заявку с контактами через форму, которая перенаправляет заявку
+              через телеграмм бота заказчику.
+            </Paragraph>
+            <Paragraph class="my-2">
+              Используемый стек: <Italic>JS, CSS, HTML, JQuery, SwiperJS</Italic>
+            </Paragraph>
+            <ul>
+              <li>
+                github:
+                <Link href="https://github.com/aydlioh/createch-vendors" />
+              </li>
+              <li>website: В данный момент отключен</li>
+            </ul>
+          </li>
+          <li class="mt-[145px]">
+            <Heading4 text="Онлайн-карта университета УрФУ" />
+            <Paragraph class="my-2">
+              Разработал интерактивную карту зданий и учебных корпусов УрФУ.
+              Сайт может работать офлайн как прогрессивное веб-приложение <Strong
+                >PWA</Strong
+              >. Можно строить маршруты от текущего положения пользователя до
+              учебных зданий (на машине или пешком). Настроено <Strong
+                >SEO</Strong
+              > для поисковых машин Яндекса.
+            </Paragraph>
+            <Paragraph class="my-2">
+              Используемый стек: <Italic
+                >React, JS, CSS, HTML, React-Leaflet, Workbox</Italic
+              >
+            </Paragraph>
+            <ul>
+              <li>
+                github:
+                <Link href="https://github.com/aydlioh/urfu-map" />
+              </li>
+              <li>
+                website:
+                <Link href="https://urfu-map.vercel.app/" />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Heading4 text="ArtHub - платформа digital дизайна" />
+            <Paragraph class="my-2">
+              Разработал <Strong>Fullstack</Strong> приложение - обучающую платформу.
+              Взаимодействовал с бэкенд разработчиком и дизайнером. Выполнял роль
+              технического лидера и руководил всем стеком разработки. Реализована
+              авторизация через <Strong>JWT</Strong> токены и настроены эндпоинты
+              на сортировку и поиск по учебным материалам сайта. Реализован бесконечный
+              скролл и пагинация
+            </Paragraph>
+            <Paragraph class="my-2">
+              Используемый стек для фронтенда:
+              <Italic>
+                TypeScript, NextJS, TailwindCSS, Redux Toolkit, RTK Query,
+                Framer Motion
+              </Italic>
+            </Paragraph>
+            <Paragraph class="my-2"
+              >Используемый стек для бэкенда:
+              <Italic> TypeScript, NestJS, Prisma, PostreSQL </Italic>
+            </Paragraph>
+            <ul>
+              <li>
+                github:
+                <Link href="https://github.com/aydlioh/ArtHub" />
+              </li>
+              <li>
+                website:
+                <Link href="https://arthub-rtf.vercel.app/" /> (Бэкенд отключен 😓)
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Heading4 text="Сайт магистратуры УрФУ" />
+            <Paragraph class="my-2">
+              Разработал сайт магистратуры по определенной специальности. <Strong
+                >Fullstack</Strong
+              > приложение с возможностью отправить заявку на почту и админ панелью
+              для редактирования контента сайта. Архитектура приложения выстраивалась
+              таким образом, чтоб в дальнейшем можно было на ее основе создавать
+              сайты других специальностей.
+            </Paragraph>
+            <Paragraph class="my-2">
+              Используемый стек: <Italic
+                >TypeScript, NextJS, TailwindCSS, Framer Motion, Redux Toolkit,
+                React Query, React Hook Form, zod, Nodemailer</Italic
+              >
+            </Paragraph>
+            <ul>
+              <li>
+                github:
+                <Link href="https://github.com/aydlioh/magistracy-urfu" />
+              </li>
+              <li>
+                website:
+                <Link href="https://magistracy-urfu.vercel.app/" />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Heading4 text="Voice Urfu - Платформа для общения студентов" />
+            <Paragraph class="my-2">
+              Платформа для общения и звонков студентов Voice. Разрабатывал <Strong
+                >Frontend</Strong
+              > часть приложения. На сайте реализована авторизация с гвардами и интерцепторами
+              на обновление токенов, личный чат между двумя пользователями, уведомления
+              о заявках в друзья, отслеживание и работа со списком друзей, добавление
+              в друзья других студентов и возможность позвонить студенту по видео
+              и аудио связи. По дизайну был кастомизирован <Strong
+                >UI kit</Strong
+              > библиотеки NextUI. Архитектура приложения строилась по методологии
+              <Strong>FSD</Strong>. Настроено <Strong>SEO</Strong> для поисковых
+              машин Google и Яндекса.
+            </Paragraph>
+            <Paragraph class="my-2">
+              Уведомления и чат реализованы на <Strong>websocket</Strong> через библиотеки
+              <Strong>SockJS</Strong>, <Strong>StompJS</Strong>. Любой
+              пользователь подписывается на определенный url и далее отслеживает
+              приходящие заявки или сообщения от других пользователей.
+            </Paragraph>
+            <Paragraph class="my-2">
+              Видеозвонок реализован через <Strong>websocket</Strong> соединение
+              и <Strong>WebRTC</Strong> технологию.
+            </Paragraph>
+            <Paragraph class="my-2">
+              Получил огромный опыт работы с новыми и необычными технологиями и
+              такой же большой опыт взаимодействия с дизайнером и двумя бэкенд
+              разработчиками.
+            </Paragraph>
+            <Paragraph class="my-2">
+              Используемый стек: <Italic
+                >TypeScript, React, Vite, TailwindCSS, NextUI, SockJS, StompJS,
+                Tanstack Query, axios, Redux Toolkit, React Hook Form, zod,
+                dayjs</Italic
+              >
+            </Paragraph>
+            <ul>
+              <li>
+                github:
+                <Link href="https://github.com/aydlioh/voice-urfu" />
+              </li>
+              <li>
+                website:
+                <Link href="https://voice-urfu.vercel.app" /> (Бэкенд отключен 😓)
+              </li>
+            </ul>
+          </li>
+          <li class="mt-[80px]">
+            <Heading4 text="NEO Lab" />
+            <Paragraph class="my-2">
+              На данный момент разрабатываю учебное приложение NEO Lab для
+              остлеживания успеваемости студентов, интерактивных тестов, учебных
+              материалов и лабораторных работ
+            </Paragraph>
+            <Paragraph class="my-2"
+              >Приложение находится на начальном этапе разработки, активно
+              происходит взаимодействие с дизайнером и верстаются основные
+              элементы сайта. Приложение разрабатывается по архитектурной
+              методологии <Strong>FSD</Strong>.</Paragraph
+            >
+            <Paragraph class="my-2">
+              Используемый стек на данный момент: <Italic
+                >TypeScript, React, TailwindCSS, NextUI, Vite, Zustand</Italic
+              >
+            </Paragraph>
+            <ul>
+              <li>
+                github:
+                <Link href="https://github.com/aydlioh/UDV-CyberLab" />
+              </li>
+              <li>
+                website:
+                <Link href="https://neolab.aydlioh.ru" />
+              </li>
+            </ul>
+          </li>
+        </OrderedList>
+      </div>
+    </div>
+  </section>
+
+  <!-- Высшее образование -->
+  <section>
+    <Heading2 text="Высшее образование" />
+    <div class="py-4 flex gap-10 flex-row justify-between">
+      <div class="w-1/5">
+        <Paragraph>
+          Сентябрь 2022 — <br />
+          По наст. время
+        </Paragraph>
+      </div>
+      <div class="w-4/5 flex flex-row gap-4">
+        <div>
+          <img
+            class="max-w-[135px] text-rose-500"
+            src="urfu.png"
+            alt="IRIT-RTF"
+          />
+        </div>
+        <div>
+          <Heading3
+            text="Уральский Федеральный Университет имени первого президента России Б.Н. Ельцина"
+          />
+          <div class="my-2">
+            <Paragraph>
+              Институт радиоэлектроники и информационных технологий-РТФ
+            </Paragraph>
+            <Paragraph> Россия, Екатеринбург </Paragraph>
+          </div>
+          <div class="mt-2">
+            <Heading4 text="Специальность" />
+            <Paragraph>Программная инженерия</Paragraph>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Дополнительное образование -->
+  <section>
+    <Heading2 text="Дополнительное образование" />
+    <div class="pt-4 flex gap-10 flex-row justify-between">
+      <div class="w-1/5">
+        <Paragraph>
+          Февраль 2024 — <br />
+          Июнь 2024
+        </Paragraph>
+      </div>
+      <div class="w-4/5 flex flex-row gap-4">
+        <div>
+          <img class="max-w-[135px]" src="htmlacademy.svg" alt="IRIT-RTF" />
+        </div>
+        <div>
+          <Heading3 text="HTML Academy" />
+          <Paragraph>Россия, Санкт-Петербург</Paragraph>
+          <div class="mt-4">
+            <Heading4 text="Пройденный курс" />
+            <Paragraph>JavaScript. Архитектура клиентских приложений</Paragraph>
+          </div>
+          <div class="mt-4">
+            <Heading4 text="Улучшенные навыки" />
+            <Paragraph>JavaScript, Webpack, ООП, Git</Paragraph>
+          </div>
+          <div class="mt-4">
+            <Heading4 text="Пройденная практика и достижения" />
+            <Paragraph class="mt-1">
+              <Italic> Курс пройден в рамках обучения в институте. </Italic>
+            </Paragraph>
+            <Paragraph class="my-3">
+              Реализован простой фреймворк для <Strong>SPA</Strong> приложений на ванильном
+              JS через сборщик <Strong>Webpack</Strong>. Изучены основные понятия
+              и принципы <Strong>ООП</Strong> и
+              <Strong>SOLID</Strong>, проработаны на практике в виде разработки
+              сайта путешествий на основе архитектурного паттерна <Strong
+                >MVP</Strong
+              > (Model-View-Presenter)
+            </Paragraph>
+            <Link
+              text="https://github.com/aydlioh/2166951-big-trip-4"
+              href="https://github.com/aydlioh/2166951-big-trip-4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
