@@ -1,6 +1,20 @@
-<div class="w-full h-svh">
-  <iframe
-    src="/output.pdf"
-    class="w-full h-full"
-  />
-</div>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      property="og:image"
+      content="/opengraph.png"
+    />
+    <title>Aydlioh's Portfolio</title>
+  </head>
+  <body>
+    <div class="w-full h-svh">
+      <embed src="/output.pdf" type="application/pdf" class="w-full h-full" />
+    </div>
+  </body>
+</html>
