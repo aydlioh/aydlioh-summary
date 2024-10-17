@@ -25,7 +25,7 @@ pnpm build
 
 #### Просмотр сборки сайта-резюме
 ```shell
-pnpm build
+pnpm preview
 ```
 
 #### Режим разработки
