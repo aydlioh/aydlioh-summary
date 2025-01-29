@@ -12,7 +12,7 @@ const pdf = await page.pdf({
 });
 await browser.close();
 
-await fs.writeFile('./portfolio/public/output.pdf', pdf);
-await fs.writeFile('./output.pdf', pdf);
+await fs.writeFile('./portfolio/public/Pavel Biryuchev Portfolio.pdf', pdf);
+await fs.writeFile('./Pavel Biryuchev Portfolio.pdf', pdf);
 
-console.log('Created ./output.pdf')
+console.log('Created ./Pavel Biryuchev Portfolio.pdf')
