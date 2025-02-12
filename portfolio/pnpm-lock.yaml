@@ -14,9 +14,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.14.5(rollup@4.21.1)(typescript@5.5.4))(tailwindcss@3.4.10)
-      '@fontsource/jetbrains-mono':
-        specifier: ^5.0.21
-        version: 5.0.21
+      '@fontsource/roboto':
+        specifier: ^5.1.1
+        version: 5.1.1
       astro:
         specifier: ^4.14.5
         version: 4.14.5(rollup@4.21.1)(typescript@5.5.4)
@@ -334,8 +334,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource/jetbrains-mono@5.0.21':
-    resolution: {integrity: sha512-BjI7a4U4HC4R3rEq96dN4CKtH8qxHFA+zU+6Ftusn/9k+VbF+VZ1l5bmHCUtg2ekjXbGF955/1FODlCKXleaGQ==}
+  '@fontsource/roboto@5.1.1':
+    resolution: {integrity: sha512-XwVVXtERDQIM7HPUIbyDe0FP4SRovpjF7zMI8M7pbqFp3ahLJsJTd18h+E6pkar6UbV3btbwkKjYARr5M+SQow==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2457,7 +2457,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@fontsource/jetbrains-mono@5.0.21': {}
+  '@fontsource/roboto@5.1.1': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:

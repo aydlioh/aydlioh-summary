@@ -10,7 +10,7 @@ export default {
         accent: '#007DFF',
       },
       fontFamily: {
-        jb_mono: ['JetBrains Mono'],
+        roboto: ['Roboto'],
       },
     },
   },
